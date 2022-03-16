@@ -37,14 +37,30 @@ body{
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
-    
 }
 
+/*Transicion botones de menu*/
+.nav ul li a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(253, 253, 253);
+    transition: 500ms;
+  }
 
-.nav ul li a:hover{
+.nav ul li a:hover::after{
     text-decoration: underline;
-    text-decoration-color: #fff;
+    text-decoration-color: #fff; 
+    width: 100%;
 }
+
+
+
+
+
+
+
 
 
 .logo img{
@@ -106,6 +122,7 @@ body{
     text-align: center;
 }
 
+/*Animacion titulo pagina web*/
 @keyframes aparecer{
     0%{
         opacity: 0;
@@ -181,10 +198,21 @@ body{
     color: rgb(66, 43, 165);
     font-size: 1.3rem;
 }
-
-.btn:hover{ 
-    background-color: #55efc4;  
+/*animacion boton de servicios*/
+.btn:hover{   
+  animation-name: animacion_btn;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
 }
+
+@keyframes animacion_btn{
+    0%{
+          
+        }
+    50%{
+        background-color: #0bcca5;
+    }
+    }
 
 
 @media (min-width: 768px)
