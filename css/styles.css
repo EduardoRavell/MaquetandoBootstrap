@@ -289,22 +289,8 @@ body{
     padding: 0 2rem;
 }
 
-.campo input[type="text"],
-.campo input[type="tel"],
-.campo input[type="mail"],
-.campo textarea,
-.campo select {
-    width: 100%;
-    padding: .8rem;
-    font-size: 1rem;
-    border-radius: 0.4rem ;
-    border-color: none;
-    border: 1px solid;
-}
 
-.campo input[type="radio"]{
-    margin: .8rem;
-}
+
 
 .campo textarea {
     height: 4rem;
