@@ -53,6 +53,20 @@
     </div>
 
     <main class="contenido-principal">
+        <!-- Toast con bootstrap -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="img/check.png" class="rounded me-2" width="20px" alt="...">
+                    <strong class="me-auto">Lavanderia La Rosita</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Bienvenido a la pagina de Lavanderia La Rosita
+                </div>
+            </div>
+        </div>
+        <!-- Fin toast -->
         <h2 class="alinear-texto padding-10">Servicios</h2>
         <section class="servicios" id="servicios">
             <div class="servicio" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
@@ -60,21 +74,21 @@
                     <img src=" img/servicio1.png" alt="producto1" width="300px" height="200px">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque quidem dolores adipisci? Iure
                         sapiente amet, ipsum in saepe unde?</p>
-                    <a class="btn" href="pages/servicio1.html">Ver servicio</a>
+                    <a class="btn" href="pages/servicio1.html">Ver </a>
             </div>
             <div class="servicio" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
                 <h3>Servicio Express</h2>
                     <img src="img/servicio2.png" alt="producto2" width="300px" height="200px">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque quidem dolores adipisci? Iure
                         sapiente amet, ipsum in saepe unde?</p>
-                    <a class="btn" href="pages/servicio2.html">Ver servicio</a>
+                    <a class="btn" href="pages/servicio2.html">Ver</a>
             </div>
             <div class="servicio" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
                 <h3>Planchado</h2>
                     <img src="img/servicio3.png" alt="producto3" width="300px" height="200px">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque quidem dolores adipisci? Iure
                         sapiente amet, ipsum in saepe unde?</p>
-                    <a class="btn" href="pages/servicio3.html">Ver servicio</a>
+                    <a class="btn" href="pages/servicio3.html">Ver</a>
             </div>
         </section>
 
@@ -121,6 +135,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script>
+        var toastLiveExample = document.getElementById('liveToast');
+        document.addEventListener('DOMContentLoaded', function () {
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+        })
+    </script>
 </body>
 
 </html>
